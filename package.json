@@ -2,11 +2,14 @@
   "scripts": {
     "watch:sass": "sass --watch sass/main.scss public/style.css",
     "devserver": "live-server",
-    "watch:tsc": "tsc -w "
+    "watch:tsc": "tsc -w ",
+    "start": "concurrently  \"yarn run watch:sass\" \"yarn run devserver\" \" yarn run watch:tsc\" "
   },
   "devDependencies": {
     "@compodoc/live-server": "^1.2.3",
+    "concurrently": "^7.1.0",
     "sass": "^1.51.0",
     "typescript": "^4.6.4"
-  }
+  },
+  "dependencies": {}
 }
