@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss public/style.css",
+    "devserver": "live-server",
+    "watch:tsc": "tsc -w "
+  },
+  "devDependencies": {
+    "@compodoc/live-server": "^1.2.3",
+    "sass": "^1.51.0",
+    "typescript": "^4.6.4"
+  }
+}
